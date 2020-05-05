@@ -12,7 +12,9 @@ class Triangle
   def kind 
     if @side_one == @side_two && @side_two == @side_three 
       :equilateral
-      elsif 
+      elsif @side_one == @side_two || @side_one == @side_three || @side_two == @side_three 
+      :isosceles 
+    elsif 
   end
   
   
